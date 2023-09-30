@@ -108,7 +108,9 @@ function createDeleteButton() {
   deleteButton.textContent = "Delete";
   deleteButton.addEventListener("click", function() {
     var row = deleteButton.parentNode.parentNode;
+    var nxtrow = deleteButton.parentNode.parentNode.nextElementSibling;
     row.parentNode.removeChild(row);
+    nxtrow.parentNode.removeChild(nxtrow);
     var studNam=row.firstElementChild.nextElementSibling.innerHTML;
     var lastInd=studNam.split(" ")[1];
     alert("Student "+parseInt(lastInd)+" record has been deleted!");
