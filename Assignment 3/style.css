@@ -1,0 +1,29 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.topline{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.socialmediaicons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialmediaicons ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialmediaicons ul li img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.socialmediaicons{
+	text-align: center;
+}
