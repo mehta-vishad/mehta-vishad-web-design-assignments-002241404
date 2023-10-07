@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">	
+<head>
+	<title>Feedback</title>
+	<style>
+		label {	float: left;
+		width: 150px;}
+		#container{
+			width: 900px;
+			margin: auto;
+			background-color: beige;
+		} 
+		main{
+			padding: 50px;
+		}
+		th, td{
+        border: 1px solid;
+      	}
+		th{
+        font-family: 'Times New Roman', Times, serif;
+        color: purple;
+      	}
+      	td{
+        font-family: 'Times New Roman', Times, serif;
+      	}
+	</style>
+</head>
+<body>
+	<div id="container">
+	
+		<main>
+			<h2>Feeback</h2>
+			<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br><br>
+			<form id="myForm" method="post" novalidate>
+				<label>Title*:</label>
+				<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+				<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+				<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+				<br><br>
+				
+				<!-- firstName -->
+				<label for="firstName">First Name*:</label>
+				<input type="text" name="firstName" id="firstName" placeholder="First Name" required="required"/>	
+				<br><br>
+				<div id="error_firstName" style="display:none; color: red;">
+					Invalid first name, Please only enter characters from A-Z.
+					<br><br>
+				</div>
+				
+				<!-- lastname -->
+				<label for="lastName">Last Name*:</label>
+				<input type="text" name="lastName" id="lastName" placeholder="Last Name" required="required"/>
+				<br><br>
+				<div id="error_lastName" style="display:none; color: red;">
+					Invalid last name, Please only enter characters from A-Z.
+					<br><br>
+				</div>
+				
+				<!-- email -->
+				<label for="emailId">Email Id*:</label>
+				<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required="required"/>
+				<br><br>
+				<div id="error_emailId" style="display:none; color: red;">
+					Invalid email address, Please enter valid email. Only northeastern.edu emails are accepted!
+					<br><br>
+				</div>
+				
+				<!-- phone -->
+				<label for="phoneNumber">Phone Number*:</label>
+				<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required="required"/>
+				<br><br>
+				<div id="error_phoneNumber" style="display:none; color: red;">
+					Invalid phone number, Please enter valid number in xxx-xxx-xxxx format.
+					<br><br>
+				</div>
+
+				<!-- addr line 1 -->
+				<label for="streetAddressLine1">Address line 1*:</label>
+				<input type="text" name="streetAddressLine1" id="streetAddressLine1" placeholder="Street Address Line 1" required="required"/>
+				<br><br>
+				<div id="error_streetAddressLine1" style="display:none; color: red;">
+					Invalid Address, Please enter valid address.
+					<br><br>
+				</div>
+
+				<!-- addr line 2 -->
+				<label for="streetAddressLine2">Address line 2:</label>
+				<input type="text" name="streetAddressLine2" id="streetAddressLine2" placeholder="Street Address Line 2(not mandatory)" />
+				<br><br>
+
+				<!-- city -->
+				<label for="city">City*:</label>
+				<input type="text" name="city" id="city" placeholder="City" required="required"/>
+				<br><br>
+				<div id="error_city" style="display:none; color: red;">
+					Invalid city, Please only enter characters from A-Z.
+					<br><br>
+				</div>
+
+				<!-- state -->
+				<label for="state">State*:</label>
+				<input type="text" name="state" id="state" placeholder="State" required="required"/>
+				<br><br>
+				<div id="error_state" style="display:none; color: red;">
+					Invalid state, Please only enter characters from A-Z.
+					<br><br>
+				</div>
+				
+				<!-- zip -->
+				<label for="zipcode">ZipCode*:</label>
+				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required="required"/>
+				<br><br>
+				<div id="error_zipcode" style="display:none; color: red;">
+					Invalid zip, Please only enter characters from 0-9. Please enter in XXXXX format.
+					<br><br>
+				</div>
+
+				<!-- dropdown -->
+				<label for="dropdown">Please Select one*:</label>
+				<select name="food" id="food" required="required">
+					<option value="Select">Select</option>
+					<option value="Pizza">Pizza</option>
+					<option value="Coffee">Coffee</option>
+					<option value="Sub">Sub</option>
+					<option value="Samosa">Samosa</option>
+					<option value="Donut">Donut</option>
+				</select>
+				<br><br>
+
+				<!-- checkboxcontainer -->
+				<div id="checkboxContainer">
+
+				</div>
+				<br>
+
+				<!-- text container -->
+				<div id="textContainer">
+
+				</div>
+				
+
+
+				<!-- how u hear -->
+				<div id="hdhcontainer">
+					<label for="zipcode">How did you hear*:</label>
+					<input type='checkbox' name="source" value="facebook" /> Facebook
+					<input type='checkbox' name="source" value="google" /> Google
+					<input type='checkbox' name="source" value="yelp" /> Yelp 
+					<br><br> 
+				</div>
+
+				<!-- comment -->
+				<label for="comments">Comments*:</label>
+				<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required="required"></textarea>
+				<br><br>
+				<input type="Submit" value="Submit" id="subbut" disabled>
+				<input type="Reset">
+				<br><br>
+			</form>
+			
+		</main>
+	</div>
+	
+	<table id="myTable" style="display: none;">
+		<tr>
+			<th>Title</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email Id</th>
+			<th>Phone Number</th>
+			<th>Street Address 1</th>
+			<th>Street Address 2</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip Code</th>
+			<th>Listbox Selection</th>
+			<th>Checkbox Selection</th>
+			<th>Checkbox Instructions</th>
+			<th>How did u hear?</th>
+			<th>Comments</th>
+		</tr>
+		
+	</table>
+	
+
+ 	<script src="script.js">
+		
+ 	</script>
+
+</body>
+</html>
