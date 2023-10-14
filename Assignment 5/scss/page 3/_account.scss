@@ -1,0 +1,57 @@
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    .pricing-plan {
+        border: 2px solid $buttoncol;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: $secondarybutcol;
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+
+        .price-tag {
+            font-size: 1.2rem;
+            color: #007bff;
+            margin: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .price{
+            margin-bottom: 20px;
+        }
+
+        .subscribe-button {
+            background-color: $buttoncol;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+.signup-form {
+    @extend %form-styles;
+}

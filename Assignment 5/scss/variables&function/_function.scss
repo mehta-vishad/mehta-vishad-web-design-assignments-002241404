@@ -1,0 +1,7 @@
+@function onHoverButton($color, $amount) {                  //function usage 
+    $amount: $amount / 100%; 
+    $hsl: hsl(hue($color), saturation($color), lightness($color));    //built in modules
+    $lightness: min(100%, lightness($hsl) + $amount);               //use of operator
+    @return hsl(hue($color), saturation($color), $lightness);
+  
+  }

@@ -1,0 +1,277 @@
+.signup-form {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #05386B;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 560px;
+}
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+.signup-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.signup-form .form-group input[type=text],
+.signup-form .form-group input[type=email],
+.signup-form .form-group input[type=password] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.signup-form button {
+  background-color: #05386B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.signup-form button:hover {
+  background-color: #edf5e1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px;
+  background-color: #5cdb95;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li button {
+  background: #05386B;
+  border-radius: 30px;
+  height: 40px;
+  width: 100px;
+  display: inline-block;
+  font-size: 13px;
+  border-color: transparent;
+  transition: background 0.1s;
+}
+nav ul li button a {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav ul li button:hover {
+  background: hsl(0, 0%, 50.5960784314%);
+}
+nav ul li button a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  color: #05386B;
+}
+
+.r {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.c1 {
+  flex-basis: 50%;
+  min-width: 250px;
+  padding-right: 25px;
+  line-height: 40px;
+  margin: 25px 0;
+}
+.c1 img {
+  width: 600px;
+  height: 700px;
+  padding: 50px 0;
+}
+.c1 h1 {
+  font-weight: 1700;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.c1 p {
+  font: 25px Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+}
+
+.indexbtn {
+  background: #05386B;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  height: 75px;
+  width: 200px;
+  display: inline-block;
+  font-size: 20px;
+  border-color: transparent;
+  transition: background 0.1s;
+}
+.indexbtn > a {
+  color: white;
+  text-decoration: none;
+}
+.indexbtn:hover {
+  background: hsl(0, 0%, 50.5960784314%);
+}
+
+.foot {
+  margin-top: 100px;
+  background: black;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.foot p a {
+  color: white;
+}
+.foot .co1 {
+  text-align: left;
+  margin-right: 300px;
+}
+.foot .co2 {
+  text-align: center;
+  margin-right: 500px;
+}
+.foot .co3 {
+  text-align: right;
+}
+
+.jobs {
+  display: grid;
+  width: 70%;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  padding: 20px;
+  margin-left: 200px;
+}
+
+.job-posting {
+  border: 2px solid #05386B;
+  background-color: #edf5e1;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.job-posting img {
+  height: 300px;
+  width: 300px;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.compensation {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-button {
+  background-color: #05386B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.pricing .pricing-plan {
+  border: 2px solid #05386B;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #edf5e1;
+}
+.pricing .pricing-plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.pricing .pricing-plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.pricing .pricing-plan ul li {
+  margin-bottom: 5px;
+}
+.pricing .pricing-plan .price-tag {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin: 20px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pricing .pricing-plan .price {
+  margin-bottom: 20px;
+}
+.pricing .pricing-plan .subscribe-button {
+  background-color: #05386B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #5cdb95;
+}/*# sourceMappingURL=main.css.map */

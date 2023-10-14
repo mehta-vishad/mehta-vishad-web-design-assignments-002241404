@@ -1,0 +1,6 @@
+@mixin buttonDefine($radius,$h,$w) {
+    border-radius: $radius;
+    height: $h;
+    width: $w;
+    display: inline-block;
+  }

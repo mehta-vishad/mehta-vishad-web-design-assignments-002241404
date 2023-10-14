@@ -1,0 +1,46 @@
+// @import "/scss/variables&function/variable";
+// @import "/scss/variables&function/_mixins.scss";
+// @import "_function.scss";
+@import "../variables&function/mixins";
+
+.navigation{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+    background-color: $primarycol;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    button{
+        background: $buttoncol;
+        @include buttonDefine(30px,40px,100px);
+        font-size: 13px;
+        border-color: transparent;
+        transition: background 0.1s;
+        a{
+            color : $secondarytextcol;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        &:hover{
+            background: onHoverButton($color: $hovercol, $amount: 40%);
+        }
+        a{
+            color: $secondarytextcol;
+            text-decoration: none;
+        }
+    }
+    
+}
+

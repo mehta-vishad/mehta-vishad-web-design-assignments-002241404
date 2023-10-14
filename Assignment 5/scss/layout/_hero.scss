@@ -1,0 +1,54 @@
+
+@import "../variables&function/mixins";
+@import "../variables&function/function";
+p{
+    color: $textcol;
+}
+
+.r{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.c1{
+    flex-basis: 50%;
+    min-width: 250px;
+    padding-right: 25px;
+    img{
+        width: 600px;
+        height: 700px;
+        padding: 50px 0;
+    }
+    h1{
+        font-weight: 1700;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    p {
+        font: #{$font-size} #{$font-family};
+    }
+    line-height: 40px;
+    margin: 25px 0;
+}
+
+.indexbtn{
+    background: $buttoncol;
+    padding: 8px 30px;
+    margin: 30px 0;
+    @include buttonDefine(30px,75px,200px);
+    font-size: 20px;
+    border-color: transparent;
+    transition: background 0.1s;
+    & > a{
+        color: $secondarytextcol;
+        text-decoration: none;
+    }
+    &:hover{
+        background: onHoverButton($color: $hovercol, $amount: 40%);
+    }
+}

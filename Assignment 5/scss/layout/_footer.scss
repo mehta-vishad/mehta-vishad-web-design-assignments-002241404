@@ -1,0 +1,23 @@
+.foot{
+    margin-top: 100px;
+    background: black;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    p a{
+        color: white;
+    }
+    .co1{
+        text-align: left;
+        margin-right: 300px;
+    }
+    .co2{
+        text-align: center;
+        margin-right: 500px;
+    }
+    .co3{
+        text-align: right;
+    }
+}
+

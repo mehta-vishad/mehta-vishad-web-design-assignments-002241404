@@ -1,0 +1,51 @@
+.jobs {
+    display: grid;
+    width: 70%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr); // 2 columns
+    grid-template-rows: repeat(4, auto);   // 4 rows
+    gap: 20px;
+    padding: 20px;
+    margin-left: 200px;
+    
+}
+
+.job-posting {
+    border: 2px solid $buttoncol;
+    background-color: $secondarybutcol;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 300px;
+        width : 300px;
+    }
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.compensation {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    background-color: $buttoncol;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}

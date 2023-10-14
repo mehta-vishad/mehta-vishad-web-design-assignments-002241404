@@ -1,0 +1,62 @@
+$primarycol : #5cdb95;
+$textcol : #05386B;
+$secondarytextcol : white;
+$buttoncol : #05386B;
+$secondarybutcol : #edf5e1;
+$hovercol : grey;
+
+$font-size: 25px;
+$font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+%form-styles {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid $buttoncol;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 560px;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    }
+
+    button {
+        background-color: $buttoncol;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $secondarybutcol;
+        }
+    }
+}
