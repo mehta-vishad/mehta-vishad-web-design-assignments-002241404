@@ -19,10 +19,10 @@ This repository contains two separate web applications. The first is a simple ca
   - The result is displayed in a non-editable field.
   - All operations are performed using a single arrow function.
 
-  ![alt text](./ss/ss1.png)
-  ![alt text](./ss/ss2.png)
-  ![alt text](./ss/ss3.png)
-  ![alt text](./ss/ss4.png)
+  ![](./ss/ss1.PNG)
+  ![](./ss/ss2.PNG)
+  ![](./ss/ss3.PNG)
+  ![](./ss/ss4.PNG)
 
 
 ### Technologies Used
@@ -50,5 +50,5 @@ This repository contains two separate web applications. The first is a simple ca
 - CSS3
 - JavaScript with Async/Await, Promises, setInterval, and clearInterval.
 
-![alt text](./ss/ss5.png)
-![alt text](./ss/ss6.png)
+![](./ss/ss5.PNG)
+![](./ss/ss6.PNG)
