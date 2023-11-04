@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(./warp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    padding-left: 20px;
+}
+
+/* Container for the calculator */
+.calculator-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+/* Display the username */
+.username-display {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Style for input fields */
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Style for result display */
+.result-display {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Styling for the operation buttons */
+button {
+    background-color: #afa24c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #afa24c;
+}
+
+/* Error message styling */
+.error {
+    color: #ff3838;
+    font-size: 0.9em;
+    height: 1.2em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

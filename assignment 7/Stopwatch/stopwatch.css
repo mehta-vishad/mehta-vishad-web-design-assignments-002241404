@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.stopwatch-container {
+    text-align: center;
+}
+
+#stopwatch {
+    font-size: 6em;
+    margin-bottom: 20px;
+}
+
+#date-picker {
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
