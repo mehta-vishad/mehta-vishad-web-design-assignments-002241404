@@ -1,0 +1,34 @@
+GET http://localhost:3000/users
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json 
+
+{
+    "name": "Vishad Mehta",
+    "email": "vishadjmehta@gmail.com",
+    "password": "Hahaha@789"
+}
+
+###
+
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Vishad M",
+    "email": "vishadjmehta@gmail.com",
+    "password": "Hahaha@7890"
+}
+
+###
+
+DELETE  http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "vishadjmehta@gmail.com"
+}
+
