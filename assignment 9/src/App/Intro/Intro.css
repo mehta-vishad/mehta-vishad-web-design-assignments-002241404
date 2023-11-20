@@ -1,0 +1,26 @@
+.introduction-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.introduction-text h1 {
+    color: #333333;
+    font-size: 2em;
+}
+
+.introduction-text p {
+    color: #555555;
+    font-size: 1.2em;
+}
+
+.introduction-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

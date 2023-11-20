@@ -1,0 +1,70 @@
+/* Cute Login Page CSS */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.login-title {
+    color: rgb(166, 0, 255); 
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(200, 98, 255); 
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.login-form button {
+    width: 50%;
+    background-color: rgb(166, 0, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.login-form button:hover {
+    background-color: rgb(104, 16, 151);;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+
